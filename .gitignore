@@ -18,6 +18,5 @@ runtime/tmp/*
 **/yarn.lock
 **/version.json
 **/build
-**/public
 **/config/index.js
 /runtime
