@@ -6,7 +6,7 @@ import {
   GET_CHANNELS,
   ADD_CHANNEL,
   DELETE_CHANNEL,
-} from './constants';
+} from '../constants';
 
 import { handleMessage } from './modal.js';
 

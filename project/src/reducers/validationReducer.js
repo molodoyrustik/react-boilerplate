@@ -2,7 +2,7 @@ import {
   COMPONENT_PAGE_SETTINGS,
   COMPONENT_PAGE_MESSAGE_ERROR, COMPONENT_PAGE_MESSAGE_SUCCESS,
   COMPONENT_PAGE_CLEAN_MESSAGE,
-} from '../actions/constants';
+} from '../constants';
 
 const initialState = {};
 

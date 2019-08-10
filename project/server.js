@@ -6,7 +6,6 @@ const root = `./build`;
 app.use(express.static(root))
 app.use(fallback('index.html', { root }))
 
-
 app.get('/', function(req,res) {
 	return res.send('hello');
 })

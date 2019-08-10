@@ -20,17 +20,17 @@ var config = {
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['*', '.js', '.jsx', '.scss']
   }
 };
 
 module.exports = (env, argv) => {
   if (argv.mode === 'development') {
     config.entry= [
+      'react-hot-loader/patch',
       'webpack-dev-server/client?http://localhost:3000',
       'webpack/hot/only-dev-server',
       './src/index.js',
-      './src/components/sass/main.scss',
     ]
     config.output = {
       path: path.resolve(__dirname, 'build'),
@@ -49,8 +49,7 @@ module.exports = (env, argv) => {
 
   if (argv.mode === 'production') {
     config.entry = [
-      './src/index.js',
-      './src/components/sass/main.scss'
+      './src/index.js'
     ]
     config.output = {
       path: path.resolve(__dirname, 'build'),

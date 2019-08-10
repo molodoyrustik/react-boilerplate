@@ -7,7 +7,7 @@ import {
   COMPONENT_PAGE_MESSAGE_ERROR,
   COMPONENT_PAGE_MESSAGE_SUCCESS,
   CHANGE_PASSWORD,
-} from './constants';
+} from '../constants';
 
 let mainApi = 'http://localhost:3001/api/v1/';
 

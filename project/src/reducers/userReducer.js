@@ -3,7 +3,7 @@ import {
   GET_LOGS,
   GET_CHANNELS,
   SUCCESS,
-} from '../actions/constants';
+} from '../constants';
 
 const defautState = {
   email: '',

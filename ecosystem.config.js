@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name: "Portfolio",
+    name: "Boilerplate",
     script: "./server.js",
     "cwd": "./project",
     // "error_file": "../runtime/logs/node.error.log",

@@ -8,7 +8,7 @@ import {
   DELETE_DOMAIN,
   GET_LOGS,
   START, SUCCESS, FAIL,
-} from './constants';
+} from '../constants';
 
 import { handleMessage } from './modal.js';
 
