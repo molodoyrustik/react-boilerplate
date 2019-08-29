@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
+import { BrowserRouter } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import { renderRoutes } from 'react-router-config';
 import { Provider } from 'react-redux';
@@ -15,7 +16,9 @@ class Client extends Component {
     return (
       <Provider store={store}>
         <ConnectedRouter history={history}>
-          {renderRoutes(routes)}
+          <BrowserRouter>
+            {renderRoutes(routes)}
+          </BrowserRouter>
         </ConnectedRouter>
       </Provider>
     );

@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 
-import LoginLayout from '../../layouts/login-layout';
+import MainLayout from '../../layouts/main-layout';
 import LoginForm from '../../components/login-form';
 
 class Login extends Component {
   render() {
     return (
-      <LoginLayout>
+      <MainLayout>
         <Helmet>
-          <title>Login !</title>
+          <title>Index</title>
         </Helmet>
         <div className="auth">
           <div className="auth__block">
-            <p className="auth__title">Login!adfadfadsf!</p>
+            <p className="auth__title">Index Page</p>
             <LoginForm />
           </div>
         </div>
-      </LoginLayout>
+      </MainLayout>
     );
   }
 }

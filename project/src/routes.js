@@ -1,5 +1,7 @@
 import React from 'react';
-import Login from './pages/login';
+
+import Index from './pages/index';
+import About from './pages/about';
 
 import NotFound from './pages/not-found';
 
@@ -7,7 +9,11 @@ const Routes = [
   {
     path: '/',
     exact: true,
-    component: Login,
+    component: Index,
+  },
+  {
+    path: '/about',
+    component: About,
   },
   {
     path: '*',
