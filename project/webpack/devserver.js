@@ -7,6 +7,7 @@ module.exports = function() {
       inline: true,
       contentBase: 'public',
       compress: true,
+      liveReload: false,
       hot: true,
       port:3000,
       historyApiFallback: true,

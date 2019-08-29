@@ -7,7 +7,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const devserver            = require('./webpack/devserver');
 const sass                 = require('./webpack/sass');
 const extractCSS           = require('./webpack/css.extract');
-const files               = require('./webpack/files');
+const files                = require('./webpack/files');
 const js                   = require('./webpack/js');
 const prodPlugins          = require('./webpack/prod.plugins');
 const devPlugins           = require('./webpack/dev.plugins');
@@ -26,12 +26,13 @@ var config = {
 
 module.exports = (env, argv) => {
   if (argv.mode === 'development') {
-    config.entry= [
-      'react-hot-loader/patch',
-      'webpack-dev-server/client?http://localhost:3000',
-      'webpack/hot/only-dev-server',
-      './src/index.js',
-    ]
+    // config.entry = [
+    //   'react-hot-loader/patch',
+    //   'webpack-dev-server/client?http://localhost:3000',
+    //   'webpack/hot/only-dev-server',
+    //   './src/index.js',
+    // ]
+    config.entry = ['react-hot-loader/patch', './src/index.js']
     config.output = {
       path: path.resolve(__dirname, 'build'),
       filename: 'bundle.js'
@@ -43,7 +44,7 @@ module.exports = (env, argv) => {
       ...sass()
     ])
     config.resolve.alias = {
-      'react-dom': '@hot-loader/react-dom'
+      'react-dom': '@hot-loader/react-dom',
     }
   }
 

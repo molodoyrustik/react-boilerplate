@@ -13,7 +13,7 @@ class Login extends Component {
         </Helmet>
         <div className="auth">
           <div className="auth__block">
-            <p className="auth__title">Login</p>
+            <p className="auth__title">Login!adfadfadsf!</p>
             <LoginForm />
           </div>
         </div>

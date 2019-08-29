@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { hot } from 'react-hot-loader';
 import { ConnectedRouter } from 'connected-react-router';
 import { renderRoutes } from 'react-router-config';
 import { Provider } from 'react-redux';
@@ -21,4 +22,4 @@ class Client extends Component {
   }
 }
 
-export default Client;
+export default hot(module)(Client);
