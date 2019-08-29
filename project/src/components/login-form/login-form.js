@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { handleError } from '../../actions/modal';
 import { login } from '../../actions';
 
-import './style.scss';
+import './login-form.scss';
 
 class LoginForm extends Component {
   state = {

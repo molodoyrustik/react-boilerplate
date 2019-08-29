@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 
-import { LoginLayout } from '../../layouts';
-import { LoginForm } from '../../components';
+import LoginLayout from '../../layouts/login-layout';
+import LoginForm from '../../components/login-form';
 
 class Login extends Component {
   render() {

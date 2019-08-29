@@ -1,7 +1,7 @@
 import React from 'react';
-import Login from './pages/Login';
+import Login from './pages/login';
 
-import NotFound from './pages/NotFound';
+import NotFound from './pages/not-found';
 
 const Routes = [
   {
